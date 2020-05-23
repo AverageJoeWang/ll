@@ -12,6 +12,6 @@ model = Seq2Seq(dataClass, featureSize=256, hiddenSize=256,
                 encoderBidirectional=True,
                 device=torch.device('cpu:0'))
 #训练
-model.train(batchSize=2048, epoch=200)
+model.train(batchSize=1024, epoch=200)
 #保存模型
-model.save('modelL-2048-200.pkl')
+model.save('modelL-1024-200.pkl')
