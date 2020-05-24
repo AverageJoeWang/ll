@@ -26,9 +26,6 @@ conda config --set show_channel_urls yes
 ## 安装
 
 ```
-
-#pytorch
-conda install pytorch=1.1 torchvision
-#依赖库
-conda install jieba scikit-learn nltk matplotlib pandas -c pytorch
+#pytorch与其他依赖库
+conda install pytorch=1.1 torchvision jieba scikit-learn nltk matplotlib pandas -c pytorch
 ```
