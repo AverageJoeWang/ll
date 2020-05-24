@@ -237,7 +237,8 @@ class Seq2Seq:
 from model.pre_process import seq2id, id2seq, filter_sent
 class ChatBot:
     def __init__(self, modelPath, device=torch.device('cpu')):   #初始化
-        modelDict = torch.load(modelPath)
+        # modelDict = torch.load(modelPath)
+        modelDict = torch.load(modelPath, map_location=torch.device('cpu'))
         self.encoderRNN, self.decoderRNN = modelDict['encoder'].to(device), modelDict['decoder'].to(device)
         self.word2id, self.id2word = modelDict['word2id'], modelDict['id2word']
         self.hiddenSize = self.encoderRNN.hiddenSize
