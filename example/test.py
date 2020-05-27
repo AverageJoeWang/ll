@@ -1,8 +1,6 @@
 
 #导入库
-from model.model import *
-from model.pre_process import *
-import torch
+from example.model.model import *
 
 #载入模型
 chatbot = ChatBot('model.pkl')

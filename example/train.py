@@ -1,6 +1,6 @@
 # 导入库
-from model.model import *
-from model.pre_process import *
+from example.model.model import *
+from example.model.pre_process import *
 import torch
 
 # 读入数据

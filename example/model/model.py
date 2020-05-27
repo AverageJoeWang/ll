@@ -5,7 +5,7 @@ from torch.nn import functional as F
 from matplotlib import pyplot as plt
 from matplotlib import ticker
 from nltk.translate.bleu_score import sentence_bleu
-import time, random, os, jieba, logging
+import time, random, jieba, logging
 import numpy as np
 import pandas as pd
 
@@ -286,7 +286,7 @@ class Seq2Seq:
     # 读入预处理的数据进行操作
 
 
-from model.pre_process import seq2id, id2seq, filter_sent
+from example.model.pre_process import seq2id, id2seq, filter_sent
 
 
 class ChatBot:

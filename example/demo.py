@@ -1,5 +1,5 @@
 # 导入库
-from model.model import ChatBot
+from example.model.model import ChatBot
 import torch, warnings, argparse
 
 warnings.filterwarnings("ignore")
